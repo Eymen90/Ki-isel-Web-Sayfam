@@ -1,0 +1,118 @@
+@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
+
+h1{
+    color: red; 
+
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+p{
+    color: #3498db;
+
+    font-size: 18px;
+    font-weight: normal;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+span{
+    color:rgb(255, 165, 0);
+}
+
+
+body{
+    background-color: #f4f4f4;
+
+    font-family: Arial, sans-serif;
+    
+    }
+
+section{
+    background-color: rgba(0, 0, 255, 0.2);
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+button{
+    padding: 10px 20px;
+}
+
+@keyframes slide {
+    0% { transform: translatex(0); }
+    50% { transform: translateX(100px);}
+    100% { transform: translateX(0);}
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    animation: slide 2s infinite;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.service-box {
+    border: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+button {
+background-color: #3498db;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
